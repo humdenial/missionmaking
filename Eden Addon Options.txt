@@ -10,11 +10,11 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_enableStaminaBar = true;
 force ace_advanced_fatigue_fadeStaminaBar = true;
-force ace_advanced_fatigue_loadFactor = 1.03238;
-force ace_advanced_fatigue_performanceFactor = 2.03506;
+force ace_advanced_fatigue_loadFactor = 1;
+force ace_advanced_fatigue_performanceFactor = 2;
 force ace_advanced_fatigue_recoveryFactor = 5;
 force ace_advanced_fatigue_swayFactor = 1;
-force ace_advanced_fatigue_terrainGradientFactor = 0.47534;
+force ace_advanced_fatigue_terrainGradientFactor = 0.5;
 
 // ACE Advanced Throwing
 force ace_advanced_throwing_enabled = true;
@@ -83,6 +83,10 @@ force ace_frag_maxTrack = 40;
 force ace_frag_maxTrackPerFrame = 10;
 force ace_frag_reflectionsEnabled = true;
 force ace_frag_spallEnabled = true;
+
+// ACE G-Forces
+ace_gforces_coef = 1;
+force ace_gforces_enabledFor = 2;
 
 // ACE Goggles
 force ace_goggles_effects = 2;
@@ -171,6 +175,7 @@ force ace_map_gestures_enabled = true;
 force ace_map_gestures_interval = 0.03;
 force ace_map_gestures_maxRange = 15;
 ace_map_gestures_nameTextColor = [0.2,0.2,0.2,0.3];
+ace_map_gestures_onlyShowFriendlys = false;
 
 // ACE Map Tools
 ace_maptools_drawStraightLines = true;
@@ -179,7 +184,7 @@ ace_maptools_rotateModifierKey = 1;
 // ACE Medical
 force ace_medical_ai_enabledFor = 0;
 force ace_medical_AIDamageThreshold = 1;
-force ace_medical_bleedingCoefficient = 0.3;
+force ace_medical_bleedingCoefficient = 0.82273;
 force ace_medical_blood_bloodLifetime = 900;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 500;
@@ -228,6 +233,7 @@ force ace_medical_treatment_medicIV = 0;
 force ace_medical_treatment_medicPAK = 2;
 force ace_medical_treatment_medicSurgicalKit = 2;
 force ace_medical_treatment_timeCoefficientPAK = 5;
+ace_medical_treatment_woundReopenChance = 1;
 
 // ACE Name Tags
 ace_nametags_defaultNametagColor = [0.77,0.51,0.08,1];
@@ -319,7 +325,7 @@ force ace_switchunits_switchToWest = false;
 
 // ACE Uncategorized
 force ace_fastroping_requireRopeItems = false;
-force ace_gforces_enabledFor = 2;
+ace_gunbag_swapGunbagEnabled = true;
 force ace_hitreactions_minDamageToTrigger = 0.1;
 force ace_inventory_inventoryDisplaySize = 1;
 force ace_laser_dispersionCount = 2;
@@ -526,10 +532,10 @@ CF_BAI_subskills_terrain_range = 25;
 CF_BAI_boost_bulletsToMaxBoost = 5;
 CF_BAI_boost_disableBoost = false;
 CF_BAI_boost_maxBoost = 1.1;
-CF_BAI_boost_minimumShotDistance = 300;
+force CF_BAI_boost_minimumShotDistance = 150;
 CF_BAI_boost_minimumShotInterval = 2;
 CF_BAI_boost_targetChangeSleepTime = 0.1;
-CF_BAI_boost_toleranceRange = 50;
+force CF_BAI_boost_toleranceRange = 20;
 
 // CF_BAI_detect
 CF_BAI_detect_aiplayervision_max_distance = 1200;
@@ -581,32 +587,35 @@ CF_BAI_suppression_spotDistance = 0.5;
 CF_BAI_suppression_spotTime = 0.5;
 
 // Zeus Enhanced
-zen_camera_adaptiveSpeed = true;
-zen_camera_defaultSpeedCoef = 1;
-zen_camera_fastSpeedCoef = 1;
-zen_camera_followTerrain = false;
-zen_common_autoAddObjects = false;
-zen_common_darkMode = false;
-zen_common_disableGearAnim = false;
-zen_common_preferredArsenal = 1;
-zen_context_menu_enabled = 2;
+force zen_camera_adaptiveSpeed = true;
+force zen_camera_defaultSpeedCoef = 1;
+force zen_camera_fastSpeedCoef = 3;
+force zen_camera_followTerrain = true;
+force zen_common_ascensionMessages = false;
+force zen_common_autoAddObjects = true;
+force zen_common_cameraBird = false;
+force zen_common_darkMode = true;
+force zen_common_disableGearAnim = true;
+force zen_common_preferredArsenal = 0;
+zen_compat_ace_hideModules = true;
+force zen_context_menu_enabled = 2;
 zen_editor_addGroupIcons = false;
-zen_editor_declutterEmptyTree = true;
-zen_editor_disableLiveSearch = false;
-zen_editor_moveDisplayToEdge = true;
-zen_editor_parachuteSounds = true;
-zen_editor_previews_enabled = true;
-zen_editor_randomizeCopyPaste = false;
-zen_editor_removeWatermark = true;
-zen_editor_unitRadioMessages = 0;
-zen_placement_enabled = false;
-zen_visibility_enabled = false;
-zen_vision_enableBlackHot = false;
-zen_vision_enableBlackHotGreenCold = false;
-zen_vision_enableBlackHotRedCold = false;
-zen_vision_enableGreenHotCold = false;
-zen_vision_enableNVG = true;
-zen_vision_enableRedGreenThermal = false;
-zen_vision_enableRedHotCold = false;
-zen_vision_enableWhiteHot = true;
-zen_vision_enableWhiteHotRedCold = false;
+force zen_editor_declutterEmptyTree = true;
+force zen_editor_disableLiveSearch = true;
+force zen_editor_moveDisplayToEdge = true;
+force zen_editor_parachuteSounds = false;
+force zen_editor_previews_enabled = true;
+force zen_editor_randomizeCopyPaste = true;
+force zen_editor_removeWatermark = true;
+force zen_editor_unitRadioMessages = 1;
+force zen_placement_enabled = true;
+force zen_visibility_enabled = true;
+force zen_vision_enableBlackHot = true;
+force zen_vision_enableBlackHotGreenCold = false;
+force zen_vision_enableBlackHotRedCold = false;
+force zen_vision_enableGreenHotCold = false;
+force zen_vision_enableNVG = true;
+force zen_vision_enableRedGreenThermal = false;
+force zen_vision_enableRedHotCold = false;
+force zen_vision_enableWhiteHot = true;
+force zen_vision_enableWhiteHotRedCold = false;
