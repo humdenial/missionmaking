@@ -44,7 +44,7 @@ CTRL SHIFT Z
 A predefined composition with all nuts and bolts adjusted and ready to be used for a saturday evening mission:
 
 * Game masters:
-  * Zeus (variable name: zeus_1, damage and stamina disabled, +152 radio)
+  * Zeus (variable name: zeus_1, damage and stamina disabled, +152 radio, mission control GUI)
   * Moderator (variable name: zeus_2, damage and stamina disabled, +152 radio)
 
 * Squad 1:
