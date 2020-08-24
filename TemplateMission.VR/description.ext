@@ -1,0 +1,470 @@
+author="Humanitarian Denial Corp";
+onLoadName = "Mission Title";
+OnLoadMission = "Mission Subtitle";
+//overviewPicture = "loadingscreen.jpg";
+
+
+
+respawn = 3; //Respawn on Custom Position
+respawnDelay = 10;
+respawnVehicleDelay = 120;
+respawnTemplatesWest[] = {"MenuPosition","MenuInventory"};
+respawnTemplatesEast[] = {"MenuPosition","MenuInventory"};
+respawnTemplatesGuer[] = {"MenuPosition","MenuInventory"};
+
+respawnOnStart = 0;
+disabledAI = 1;
+joinUnassigned = 1;
+aiKills  = 1;
+saving = 0;
+
+
+
+class MissionControlGUI
+{
+	idd = -1;
+
+	class ControlsBackground
+	{
+
+	};
+	class Controls
+	{
+		class i_friendly
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.61875;
+			y = safeZoneY + safeZoneH * 0.3;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Set Friendly";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.302,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call SetFriendly;
+		};
+		class i_hostile
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.61875;
+			y = safeZoneY + safeZoneH * 0.375;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Set Hostile";
+			borderSize = 0;
+			colorBackground[] = {0.6,0,0,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call SetHostile;
+		};
+		class time_fast
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.81875;
+			y = safeZoneY + safeZoneH * 0.9;
+			w = safeZoneW * 0.0625;
+			h = safeZoneH * 0.025;
+			style = 0+2;
+			text = "Fast Time";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.04;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call TimeFast;
+		};
+		class time_normal
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.74375;
+			y = safeZoneY + safeZoneH * 0.9;
+			w = safeZoneW * 0.0625;
+			h = safeZoneH * 0.025;
+			style = 0+2;
+			text = "Normal Time";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.04;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call TimeNormal;
+		};
+		class mission_success
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.04375;
+			y = safeZoneY + safeZoneH * 0.875;
+			w = safeZoneW * 0.0875;
+			h = safeZoneH * 0.025;
+			style = 0+2;
+			text = "Mission Success";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.2,0.4,0.2,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.04;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call MissionSuccess;
+		};
+		class mission_fail
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.04375;
+			y = safeZoneY + safeZoneH * 0.925;
+			w = safeZoneW * 0.0875;
+			h = safeZoneH * 0.025;
+			style = 0+2;
+			text = "Mission Fail";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.702,0.102,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.04;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call MissionFail;
+		};
+		class action_1
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.26875;
+			y = safeZoneY + safeZoneH * 0.3;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 1";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action1;
+		};
+		class action_2
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.26875;
+			y = safeZoneY + safeZoneH * 0.375;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 2";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action2;
+		};
+		class action_3
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.26875;
+			y = safeZoneY + safeZoneH * 0.45;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 3";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action3;
+		};
+		class action_4
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.26875;
+			y = safeZoneY + safeZoneH * 0.525;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 4";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action4;
+		};
+		class action_5
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.41875;
+			y = safeZoneY + safeZoneH * 0.3;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 5";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action5;
+		};
+		class action_6
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.41875;
+			y = safeZoneY + safeZoneH * 0.375;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 6";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action6;
+		};
+		class action_7
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.41875;
+			y = safeZoneY + safeZoneH * 0.45;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 7";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action7;
+		};
+		class action_8
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.41875;
+			y = safeZoneY + safeZoneH * 0.525;
+			w = safeZoneW * 0.1125;
+			h = safeZoneH * 0.05;
+			style = 0+2;
+			text = "Action 8";
+			borderSize = 0;
+			colorBackground[] = {0.102,0.102,0.102,1};
+			colorBackgroundActive[] = {0.8,0.8,0.2,1};
+			colorBackgroundDisabled[] = {0.2,0.2,0.2,1};
+			colorBorder[] = {0.6,0.6,0,1};
+			colorDisabled[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,1};
+			colorText[] = {0.502,0.502,0.102,1};
+			font = "PuristaBold";
+			offsetPressedX = 0.01;
+			offsetPressedY = 0.01;
+			offsetX = 0.01;
+			offsetY = 0.01;
+			sizeEx = 0.05;
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onMouseButtonDown = _this call Action8;
+		};
+
+	};
+
+};

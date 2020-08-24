@@ -1,0 +1,3663 @@
+version=53;
+center[]={2727.2969,5,3083.8389};
+class items
+{
+	items=9;
+	class Item0
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-4.2546387,0,-5.824707};
+		};
+		id=0;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="zeus_1";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=2;
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+	class Item1
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=4;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-3.1687012,0.0014390945,0.40039063};
+					angles[]={0,2.8077838,0};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					description="Quatschleader";
+					isPlayable=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_MX_F";
+							optics="optic_Aco";
+							flashlight="acc_pointer_IR";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_mag";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_P07_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_B_CombatUniform_mcam";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_mag";
+									count=2;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="FirstAidKit";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_PlateCarrier1_rgr";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_mag";
+									count=7;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShellGreen";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="Chemlight_green";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						hmd="NVGoggles";
+						headgear="H_HelmetB";
+					};
+				};
+				id=2;
+				type="B_Soldier_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male07ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.03;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-2.4064941,0.0014390945,2.0249023};
+					angles[]={0,2.9436903,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Combat Live Shaver";
+					isPlayable=1;
+				};
+				id=3;
+				type="B_Soldier_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ENH_unitTraits_medic";
+						expression="_this setUnitTrait ['Medic',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male12ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.99000001;
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.7902832,0.0014390945,3.3818359};
+					angles[]={0,3.0521226,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Rifleman";
+					isPlayable=1;
+				};
+				id=4;
+				type="B_Soldier_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.0427246,0.0014390945,4.5976563};
+					angles[]={0,3.1268108,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Rifleman";
+					isPlayable=1;
+				};
+				id=5;
+				type="B_Soldier_F";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=1;
+	};
+	class Item2
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=4;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={3.4074707,0.0014390945,0.15527344};
+					angles[]={0,3.3918471,0};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					description="Quatschleader";
+					isPlayable=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="arifle_MX_F";
+							optics="optic_Aco";
+							flashlight="acc_pointer_IR";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_65x39_caseless_mag";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_P07_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_B_CombatUniform_mcam";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_mag";
+									count=2;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="FirstAidKit";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_PlateCarrier1_rgr";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=6;
+								class Item0
+								{
+									name="30Rnd_65x39_caseless_mag";
+									count=7;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShellGreen";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="Chemlight_green";
+									count=2;
+									ammoLeft=1;
+								};
+								class Item5
+								{
+									name="HandGrenade";
+									count=2;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						hmd="NVGoggles";
+						headgear="H_HelmetB";
+					};
+				};
+				id=7;
+				type="B_Soldier_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02ENG";
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.95999998;
+							};
+						};
+					};
+					nAttributes=2;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={2.5080566,0.0014390945,1.4438477};
+					angles[]={0,3.1967356,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Combat Live Shaver";
+					isPlayable=1;
+				};
+				id=8;
+				type="B_Soldier_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="ENH_unitTraits_medic";
+						expression="_this setUnitTrait ['Medic',_value]";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=1;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male10ENG";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.98000002;
+							};
+						};
+					};
+					nAttributes=3;
+				};
+			};
+			class Item2
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.6843262,0.0014390945,3.0283203};
+					angles[]={0,3.0896156,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Rifleman";
+					isPlayable=1;
+				};
+				id=9;
+				type="B_Soldier_F";
+			};
+			class Item3
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={0.81567383,0.0014390945,4.5083008};
+					angles[]={0,3.0183885,0};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					description="Rifleman";
+					isPlayable=1;
+				};
+				id=10;
+				type="B_Soldier_F";
+			};
+		};
+		class Attributes
+		{
+		};
+		id=6;
+	};
+	class Item3
+	{
+		dataType="Group";
+		side="West";
+		class Entities
+		{
+			items=2;
+			class Item0
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={-1.4050293,0.0014390945,-2.9726563};
+				};
+				side="West";
+				flags=7;
+				class Attributes
+				{
+					init="call{[this, zeus_1] execVM ""mission_control.sqf"";}";
+					name="zeus_1";
+					description="Zeus";
+					isPlayer=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="SMG_05_F";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_9x21_Mag_SMG_02";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_P07_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class binocular
+						{
+							name="Binocular";
+						};
+						class uniform
+						{
+							typeName="U_B_GEN_Commander_F";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="30Rnd_9x21_Mag_SMG_02";
+									count=1;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="FirstAidKit";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_TacVest_gen_F";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=5;
+								class Item0
+								{
+									name="30Rnd_9x21_Mag_SMG_02";
+									count=4;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item4
+								{
+									name="SmokeShellYellow";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						headgear="H_Beret_Colonel";
+					};
+				};
+				id=12;
+				type="B_GEN_Commander_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02ENGFRE";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=1.03;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="enableStamina";
+						expression="_this enablestamina _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+			class Item1
+			{
+				dataType="Object";
+				class PositionInfo
+				{
+					position[]={1.6066895,0.0014390945,-2.8857422};
+				};
+				side="West";
+				flags=5;
+				class Attributes
+				{
+					name="zeus_2";
+					description="Moderator";
+					isPlayable=1;
+					class Inventory
+					{
+						class primaryWeapon
+						{
+							name="SMG_05_F";
+							class primaryMuzzleMag
+							{
+								name="30Rnd_9x21_Mag_SMG_02";
+								ammoLeft=30;
+							};
+						};
+						class handgun
+						{
+							name="hgun_P07_F";
+							class primaryMuzzleMag
+							{
+								name="16Rnd_9x21_Mag";
+								ammoLeft=17;
+							};
+						};
+						class uniform
+						{
+							typeName="U_B_GEN_Soldier_F";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=1;
+								class Item0
+								{
+									name="30Rnd_9x21_Mag_SMG_02";
+									count=2;
+									ammoLeft=30;
+								};
+							};
+							class ItemCargo
+							{
+								items=2;
+								class Item0
+								{
+									name="FirstAidKit";
+									count=1;
+								};
+								class Item1
+								{
+									name="ACRE_PRC152";
+									count=1;
+								};
+							};
+						};
+						class vest
+						{
+							typeName="V_TacVest_gen_F";
+							isBackpack=0;
+							class MagazineCargo
+							{
+								items=4;
+								class Item0
+								{
+									name="30Rnd_9x21_Mag_SMG_02";
+									count=3;
+									ammoLeft=30;
+								};
+								class Item1
+								{
+									name="16Rnd_9x21_Mag";
+									count=2;
+									ammoLeft=17;
+								};
+								class Item2
+								{
+									name="HandGrenade";
+									count=1;
+									ammoLeft=1;
+								};
+								class Item3
+								{
+									name="SmokeShell";
+									count=1;
+									ammoLeft=1;
+								};
+							};
+						};
+						map="ItemMap";
+						compass="ItemCompass";
+						watch="ItemWatch";
+						radio="ItemRadio";
+						headgear="H_Beret_02";
+					};
+				};
+				id=13;
+				type="B_GEN_Soldier_F";
+				class CustomAttributes
+				{
+					class Attribute0
+					{
+						property="allowDamage";
+						expression="_this allowdamage _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					class Attribute1
+					{
+						property="speaker";
+						expression="_this setspeaker _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Male02ENGFRE";
+							};
+						};
+					};
+					class Attribute2
+					{
+						property="pitch";
+						expression="_this setpitch _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"SCALAR"
+									};
+								};
+								value=0.95999998;
+							};
+						};
+					};
+					class Attribute3
+					{
+						property="enableStamina";
+						expression="_this enablestamina _value;";
+						class Value
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"BOOL"
+									};
+								};
+								value=0;
+							};
+						};
+					};
+					nAttributes=4;
+				};
+			};
+		};
+		class Attributes
+		{
+		};
+		id=11;
+	};
+	class Item4
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={4.6574707,0,-5.9697266};
+		};
+		id=14;
+		type="ModuleCurator_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCurator_F_Owner";
+				expression="_this setVariable ['Owner',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="zeus_2";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCurator_F_Forced";
+				expression="_this setVariable ['Forced',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=0;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCurator_F_Name";
+				expression="_this setVariable ['Name',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCurator_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"SCALAR"
+							};
+						};
+						value=2;
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+	class Item5
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-9.0119629,0,-3.5};
+		};
+		id=15;
+		type="ModuleCuratorAddAddons_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCuratorAddAddons_F_Curator";
+				expression="_this setVariable ['Curator',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="zeus_1";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCuratorAddAddons_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCuratorAddAddons_F_Text";
+				expression="_this setVariable ['Text',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCuratorAddAddons_F_Mode";
+				expression="_this setVariable ['Mode',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+	class Item6
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={9.1765137,0,-3.7192383};
+		};
+		id=16;
+		type="ModuleCuratorAddAddons_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCuratorAddAddons_F_Curator";
+				expression="_this setVariable ['Curator',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="zeus_2";
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCuratorAddAddons_F_Addons";
+				expression="_this setVariable ['Addons',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCuratorAddAddons_F_Text";
+				expression="_this setVariable ['Text',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="";
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCuratorAddAddons_F_Mode";
+				expression="_this setVariable ['Mode',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=4;
+		};
+	};
+	class Item7
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={-7.6218262,0,4.0551758};
+		};
+		id=17;
+		type="ModuleCuratorSetAttributesPlayer_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCuratorSetAttributesObject_F_Lock";
+				expression="_this setVariable ['Lock',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCuratorSetAttributesObject_F_Exec";
+				expression="_this setVariable ['Exec',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCuratorSetAttributesObject_F_Fuel";
+				expression="_this setVariable ['Fuel',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCuratorSetAttributesObject_F_UnitPos";
+				expression="_this setVariable ['UnitPos',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCuratorSetAttributesObject_F_Curator";
+				expression="_this setVariable ['Curator',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="zeus_1";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="ModuleCuratorSetAttributesObject_F_Damage";
+				expression="_this setVariable ['Damage',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="ModuleCuratorSetAttributesObject_F_Rank";
+				expression="_this setVariable ['Rank',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="ModuleCuratorSetAttributesObject_F_RespawnVehicle";
+				expression="_this setVariable ['RespawnVehicle',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute8
+			{
+				property="ModuleCuratorSetAttributesObject_F_Skill";
+				expression="_this setVariable ['Skill',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute9
+			{
+				property="ModuleCuratorSetAttributesObject_F_RespawnPosition";
+				expression="_this setVariable ['RespawnPosition',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=10;
+		};
+	};
+	class Item8
+	{
+		dataType="Logic";
+		class PositionInfo
+		{
+			position[]={8.0129395,0,4.3432617};
+		};
+		id=18;
+		type="ModuleCuratorSetAttributesPlayer_F";
+		class CustomAttributes
+		{
+			class Attribute0
+			{
+				property="ModuleCuratorSetAttributesObject_F_Lock";
+				expression="_this setVariable ['Lock',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute1
+			{
+				property="ModuleCuratorSetAttributesObject_F_Exec";
+				expression="_this setVariable ['Exec',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute2
+			{
+				property="ModuleCuratorSetAttributesObject_F_Fuel";
+				expression="_this setVariable ['Fuel',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute3
+			{
+				property="ModuleCuratorSetAttributesObject_F_UnitPos";
+				expression="_this setVariable ['UnitPos',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute4
+			{
+				property="ModuleCuratorSetAttributesObject_F_Curator";
+				expression="_this setVariable ['Curator',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"STRING"
+							};
+						};
+						value="zeus_2";
+					};
+				};
+			};
+			class Attribute5
+			{
+				property="ModuleCuratorSetAttributesObject_F_Damage";
+				expression="_this setVariable ['Damage',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute6
+			{
+				property="ModuleCuratorSetAttributesObject_F_Rank";
+				expression="_this setVariable ['Rank',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute7
+			{
+				property="ModuleCuratorSetAttributesObject_F_RespawnVehicle";
+				expression="_this setVariable ['RespawnVehicle',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute8
+			{
+				property="ModuleCuratorSetAttributesObject_F_Skill";
+				expression="_this setVariable ['Skill',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			class Attribute9
+			{
+				property="ModuleCuratorSetAttributesObject_F_RespawnPosition";
+				expression="_this setVariable ['RespawnPosition',_value,true];";
+				class Value
+				{
+					class data
+					{
+						class type
+						{
+							type[]=
+							{
+								"BOOL"
+							};
+						};
+						value=1;
+					};
+				};
+			};
+			nAttributes=10;
+		};
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=190;
+	};
+	class Links
+	{
+		items=190;
+		class Item0
+		{
+			linkID=0;
+			item0=0;
+			item1=12;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=14;
+			item1=13;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=2;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=3;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=4;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=5;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item6
+		{
+			linkID=6;
+			item0=7;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=8;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item8
+		{
+			linkID=8;
+			item0=9;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item9
+		{
+			linkID=9;
+			item0=10;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item10
+		{
+			linkID=10;
+			item0=2;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item11
+		{
+			linkID=11;
+			item0=3;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item12
+		{
+			linkID=12;
+			item0=4;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item13
+		{
+			linkID=13;
+			item0=5;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item14
+		{
+			linkID=14;
+			item0=7;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item15
+		{
+			linkID=15;
+			item0=8;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item16
+		{
+			linkID=16;
+			item0=9;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item17
+		{
+			linkID=17;
+			item0=10;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item18
+		{
+			linkID=18;
+			item0=2;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item19
+		{
+			linkID=19;
+			item0=3;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item20
+		{
+			linkID=20;
+			item0=4;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item21
+		{
+			linkID=21;
+			item0=5;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item22
+		{
+			linkID=22;
+			item0=7;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item23
+		{
+			linkID=23;
+			item0=8;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item24
+		{
+			linkID=24;
+			item0=9;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item25
+		{
+			linkID=25;
+			item0=10;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item26
+		{
+			linkID=26;
+			item0=2;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item27
+		{
+			linkID=27;
+			item0=3;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item28
+		{
+			linkID=28;
+			item0=4;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item29
+		{
+			linkID=29;
+			item0=5;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item30
+		{
+			linkID=30;
+			item0=7;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item31
+		{
+			linkID=31;
+			item0=8;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item32
+		{
+			linkID=32;
+			item0=9;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item33
+		{
+			linkID=33;
+			item0=10;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item34
+		{
+			linkID=34;
+			item0=15;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item35
+		{
+			linkID=35;
+			item0=17;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item36
+		{
+			linkID=36;
+			item0=16;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item37
+		{
+			linkID=37;
+			item0=18;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item38
+		{
+			linkID=38;
+			item0=0;
+			item1=12;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item39
+		{
+			linkID=39;
+			item0=14;
+			item1=13;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item40
+		{
+			linkID=40;
+			item0=2;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item41
+		{
+			linkID=41;
+			item0=3;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item42
+		{
+			linkID=42;
+			item0=4;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item43
+		{
+			linkID=43;
+			item0=5;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item44
+		{
+			linkID=44;
+			item0=7;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item45
+		{
+			linkID=45;
+			item0=8;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item46
+		{
+			linkID=46;
+			item0=9;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item47
+		{
+			linkID=47;
+			item0=10;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item48
+		{
+			linkID=48;
+			item0=2;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item49
+		{
+			linkID=49;
+			item0=3;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item50
+		{
+			linkID=50;
+			item0=4;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item51
+		{
+			linkID=51;
+			item0=5;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item52
+		{
+			linkID=52;
+			item0=7;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item53
+		{
+			linkID=53;
+			item0=8;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item54
+		{
+			linkID=54;
+			item0=9;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item55
+		{
+			linkID=55;
+			item0=10;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item56
+		{
+			linkID=56;
+			item0=2;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item57
+		{
+			linkID=57;
+			item0=3;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item58
+		{
+			linkID=58;
+			item0=4;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item59
+		{
+			linkID=59;
+			item0=5;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item60
+		{
+			linkID=60;
+			item0=7;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item61
+		{
+			linkID=61;
+			item0=8;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item62
+		{
+			linkID=62;
+			item0=9;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item63
+		{
+			linkID=63;
+			item0=10;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item64
+		{
+			linkID=64;
+			item0=2;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item65
+		{
+			linkID=65;
+			item0=3;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item66
+		{
+			linkID=66;
+			item0=4;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item67
+		{
+			linkID=67;
+			item0=5;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item68
+		{
+			linkID=68;
+			item0=7;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item69
+		{
+			linkID=69;
+			item0=8;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item70
+		{
+			linkID=70;
+			item0=9;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item71
+		{
+			linkID=71;
+			item0=10;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item72
+		{
+			linkID=72;
+			item0=15;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item73
+		{
+			linkID=73;
+			item0=17;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item74
+		{
+			linkID=74;
+			item0=16;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item75
+		{
+			linkID=75;
+			item0=18;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item76
+		{
+			linkID=76;
+			item0=0;
+			item1=12;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item77
+		{
+			linkID=77;
+			item0=14;
+			item1=13;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item78
+		{
+			linkID=78;
+			item0=2;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item79
+		{
+			linkID=79;
+			item0=3;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item80
+		{
+			linkID=80;
+			item0=4;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item81
+		{
+			linkID=81;
+			item0=5;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item82
+		{
+			linkID=82;
+			item0=7;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item83
+		{
+			linkID=83;
+			item0=8;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item84
+		{
+			linkID=84;
+			item0=9;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item85
+		{
+			linkID=85;
+			item0=10;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item86
+		{
+			linkID=86;
+			item0=2;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item87
+		{
+			linkID=87;
+			item0=3;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item88
+		{
+			linkID=88;
+			item0=4;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item89
+		{
+			linkID=89;
+			item0=5;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item90
+		{
+			linkID=90;
+			item0=7;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item91
+		{
+			linkID=91;
+			item0=8;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item92
+		{
+			linkID=92;
+			item0=9;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item93
+		{
+			linkID=93;
+			item0=10;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item94
+		{
+			linkID=94;
+			item0=2;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item95
+		{
+			linkID=95;
+			item0=3;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item96
+		{
+			linkID=96;
+			item0=4;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item97
+		{
+			linkID=97;
+			item0=5;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item98
+		{
+			linkID=98;
+			item0=7;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item99
+		{
+			linkID=99;
+			item0=8;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item100
+		{
+			linkID=100;
+			item0=9;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item101
+		{
+			linkID=101;
+			item0=10;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item102
+		{
+			linkID=102;
+			item0=2;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item103
+		{
+			linkID=103;
+			item0=3;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item104
+		{
+			linkID=104;
+			item0=4;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item105
+		{
+			linkID=105;
+			item0=5;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item106
+		{
+			linkID=106;
+			item0=7;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item107
+		{
+			linkID=107;
+			item0=8;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item108
+		{
+			linkID=108;
+			item0=9;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item109
+		{
+			linkID=109;
+			item0=10;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item110
+		{
+			linkID=110;
+			item0=15;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item111
+		{
+			linkID=111;
+			item0=17;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item112
+		{
+			linkID=112;
+			item0=16;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item113
+		{
+			linkID=113;
+			item0=18;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item114
+		{
+			linkID=114;
+			item0=0;
+			item1=12;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item115
+		{
+			linkID=115;
+			item0=14;
+			item1=13;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item116
+		{
+			linkID=116;
+			item0=2;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item117
+		{
+			linkID=117;
+			item0=3;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item118
+		{
+			linkID=118;
+			item0=4;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item119
+		{
+			linkID=119;
+			item0=5;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item120
+		{
+			linkID=120;
+			item0=7;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item121
+		{
+			linkID=121;
+			item0=8;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item122
+		{
+			linkID=122;
+			item0=9;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item123
+		{
+			linkID=123;
+			item0=10;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item124
+		{
+			linkID=124;
+			item0=2;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item125
+		{
+			linkID=125;
+			item0=3;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item126
+		{
+			linkID=126;
+			item0=4;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item127
+		{
+			linkID=127;
+			item0=5;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item128
+		{
+			linkID=128;
+			item0=7;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item129
+		{
+			linkID=129;
+			item0=8;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item130
+		{
+			linkID=130;
+			item0=9;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item131
+		{
+			linkID=131;
+			item0=10;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item132
+		{
+			linkID=132;
+			item0=2;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item133
+		{
+			linkID=133;
+			item0=3;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item134
+		{
+			linkID=134;
+			item0=4;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item135
+		{
+			linkID=135;
+			item0=5;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item136
+		{
+			linkID=136;
+			item0=7;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item137
+		{
+			linkID=137;
+			item0=8;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item138
+		{
+			linkID=138;
+			item0=9;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item139
+		{
+			linkID=139;
+			item0=10;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item140
+		{
+			linkID=140;
+			item0=2;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item141
+		{
+			linkID=141;
+			item0=3;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item142
+		{
+			linkID=142;
+			item0=4;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item143
+		{
+			linkID=143;
+			item0=5;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item144
+		{
+			linkID=144;
+			item0=7;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item145
+		{
+			linkID=145;
+			item0=8;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item146
+		{
+			linkID=146;
+			item0=9;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item147
+		{
+			linkID=147;
+			item0=10;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item148
+		{
+			linkID=148;
+			item0=15;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item149
+		{
+			linkID=149;
+			item0=17;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item150
+		{
+			linkID=150;
+			item0=16;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item151
+		{
+			linkID=151;
+			item0=18;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item152
+		{
+			linkID=152;
+			item0=0;
+			item1=12;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item153
+		{
+			linkID=153;
+			item0=14;
+			item1=13;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item154
+		{
+			linkID=154;
+			item0=2;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item155
+		{
+			linkID=155;
+			item0=3;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item156
+		{
+			linkID=156;
+			item0=4;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item157
+		{
+			linkID=157;
+			item0=5;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item158
+		{
+			linkID=158;
+			item0=7;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item159
+		{
+			linkID=159;
+			item0=8;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item160
+		{
+			linkID=160;
+			item0=9;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item161
+		{
+			linkID=161;
+			item0=10;
+			item1=15;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item162
+		{
+			linkID=162;
+			item0=2;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item163
+		{
+			linkID=163;
+			item0=3;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item164
+		{
+			linkID=164;
+			item0=4;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item165
+		{
+			linkID=165;
+			item0=5;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item166
+		{
+			linkID=166;
+			item0=7;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item167
+		{
+			linkID=167;
+			item0=8;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item168
+		{
+			linkID=168;
+			item0=9;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item169
+		{
+			linkID=169;
+			item0=10;
+			item1=17;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item170
+		{
+			linkID=170;
+			item0=2;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item171
+		{
+			linkID=171;
+			item0=3;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item172
+		{
+			linkID=172;
+			item0=4;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item173
+		{
+			linkID=173;
+			item0=5;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item174
+		{
+			linkID=174;
+			item0=7;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item175
+		{
+			linkID=175;
+			item0=8;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item176
+		{
+			linkID=176;
+			item0=9;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item177
+		{
+			linkID=177;
+			item0=10;
+			item1=18;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item178
+		{
+			linkID=178;
+			item0=2;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item179
+		{
+			linkID=179;
+			item0=3;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item180
+		{
+			linkID=180;
+			item0=4;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item181
+		{
+			linkID=181;
+			item0=5;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item182
+		{
+			linkID=182;
+			item0=7;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item183
+		{
+			linkID=183;
+			item0=8;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item184
+		{
+			linkID=184;
+			item0=9;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item185
+		{
+			linkID=185;
+			item0=10;
+			item1=16;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item186
+		{
+			linkID=186;
+			item0=15;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item187
+		{
+			linkID=187;
+			item0=17;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item188
+		{
+			linkID=188;
+			item0=16;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item189
+		{
+			linkID=189;
+			item0=18;
+			item1=14;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};
