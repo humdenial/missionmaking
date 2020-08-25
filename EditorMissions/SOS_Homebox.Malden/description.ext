@@ -1,0 +1,31 @@
+author="Humanitarian Denial Corporation";
+onLoadName = "SOS Homebox";
+OnLoadMission = "'Train hard, fight easy.' - General Alexander Suvorov";
+//overviewPicture = "loading.jpg";
+
+
+respawn = 3;
+respawnDelay = 30;
+respawnVehicleDelay = 120;
+respawnTemplatesWest[] = {"MenuPosition","MenuInventory"};
+respawnTemplatesEast[] = {"MenuPosition","MenuInventory"};
+respawnTemplatesGuer[] = {"MenuPosition","MenuInventory"};
+
+respawnOnStart = 0;
+disabledAI = 1;
+joinUnassigned = 1;
+aiKills  = 1;
+
+class CfgFunctions
+{
+	class BIS
+	{
+		class Bootcamp_MP
+		{
+			class timeTrial		{ file = "functions\fn_timeTrial.sqf"; };
+			class firingRange	{ file = "functions\fn_firingRange.sqf"; };
+			class targetSlide	{ file = "functions\fn_targetSlide.sqf"; };
+			class suppressiveFire	{ file = "functions\fn_suppressiveFire.sqf"; };
+		};
+	};
+};
