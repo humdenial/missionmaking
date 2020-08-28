@@ -7,7 +7,7 @@ I was hesitant to put them in here and hereby forcing my preference and selectio
 ## The Minimal Modset
 
 Name | Description
---- | --- | ---
+--- | ---
 CBA_A3 | community based addons - required
 ace | advanced combat environment
 ACEX | additions to ace (e.g. selective 3rd person lock)
@@ -16,17 +16,17 @@ ACRE2 | our radio mod
 ## Enhancements for the Zeus
 
 Name | Description
---- | --- | ---
+--- | ---
 Zeus Enhanced | yes, you want that (provides handy functions via contextmenu)
 Zeus Enhanced | ACE3 Compatibility
 ZEC - Zeus and Eden Templates / Building Compositions | some compositions
 ZEI - Zeus and Eden Interiors | autofill buildings with objects
-3den Enhanced | Editor enhancements
+3den Enhanced | editor enhancements
 
 ## Improved Immersion
 
 Name | Description
---- | --- | ---
+--- | ---
 ArmaFXP | realistic explosions (particle effects)
 White_Phosphor | blueish nightvision
 JSRS SOUNDMOD | improved sound effects
@@ -39,13 +39,13 @@ Don't underestimate the importance of sound! The psycho-accoustic experience pla
 ## AI Behaviour
 
 Name | Description
---- | --- | ---
+--- | ---
 CF_BAI | better AI
 Project injury Reaction (PiR) | AI treats wounded colleagues
 
 ## Fun
 
 Name | Description
---- | --- | ---
+--- | ---
 Clippy | nag players with microsoft's famous assistant
 Immersion Cigs | tobacco and lollipops
