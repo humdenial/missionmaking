@@ -1,9 +1,18 @@
 author="Humanitarian Denial Corp";
 onLoadName = "Mission Title";
-OnLoadMission = "Mission Subtitle";
+onLoadMission = "Mission Subtitle";
 //overviewPicture = "loadingscreen.jpg";
 
+// name your actions
+#define action1Name "Action 1"
+#define action2Name ""
+#define action3Name ""
+#define action4Name ""
 
+#define action5Name ""
+#define action6Name ""
+#define action7Name ""
+#define action8Name ""
 
 respawn = 3; //Respawn on Custom Position
 respawnDelay = 10;
@@ -225,7 +234,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 1";
+			text = action1Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
@@ -256,7 +265,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 2";
+			text = action2Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
@@ -287,7 +296,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 3";
+			text = action3Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
@@ -318,7 +327,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 4";
+			text = action4Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
@@ -349,7 +358,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 5";
+			text = action5Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
@@ -380,7 +389,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 6";
+			text = action6Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
@@ -411,7 +420,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 7";
+			text = action7Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
@@ -442,7 +451,7 @@ class MissionControlGUI
 			w = safeZoneW * 0.1125;
 			h = safeZoneH * 0.05;
 			style = 0+2;
-			text = "Action 8";
+			text = action8Name;
 			borderSize = 0;
 			colorBackground[] = {0.102,0.102,0.102,1};
 			colorBackgroundActive[] = {0.8,0.8,0.2,1};
