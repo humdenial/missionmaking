@@ -2,6 +2,8 @@
 
 ## Step 1: Create a PBO of your assets
 
+![step1](https://raw.githubusercontent.com/humdenial/missionmaking/master/doc/img/assets-in-mod%20step1%20addon%20builder.png)
+
 * Create a folder [missionname]-assets, in this case meteosupport-assets
 * launch the addon builder
 * addon source directory is the directory containing your assets
@@ -13,6 +15,8 @@
 
 ## Step 2: Create a mod
 
+![step2](https://raw.githubusercontent.com/humdenial/missionmaking/master/doc/img/assets-in-mod%20step2%20publisher.png)
+
 * Run Publisher
 * Select your previously created folder that contains the Addons-folder
 * Give it a name, adjust visibility as you wish
@@ -20,8 +24,12 @@
 
 ## Step 3: Your mod is in the workshop
 
+![step3](https://raw.githubusercontent.com/humdenial/missionmaking/master/doc/img/assets-in-mod%20step3%20workshop.png)
+
 * Add it to your modlist
 
-## Step 4: How to reference it in the editor
+## Step 4: How to reference assets in the editor
+
+![step4](https://raw.githubusercontent.com/humdenial/missionmaking/master/doc/img/assets-in-mod%20step4%20reference-in-editor.png)
 
 * [pbo-name]\assetname.paa, in this case \meteosupport-assets\eumetsat.paa
