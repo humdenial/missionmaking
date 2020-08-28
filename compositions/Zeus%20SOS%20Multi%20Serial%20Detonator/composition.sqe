@@ -1,0 +1,319 @@
+version=53;
+center[]={3734.78,5,8032.9063};
+class items
+{
+	items=9;
+	class Item0
+	{
+		dataType="Trigger";
+		position[]={-40.591064,0,0.31054688};
+		class Attributes
+		{
+			condition="call{NameYourFuckingVariable}";
+			onActivation="call{delay = 0.1; " \n " " \n "[thisTrigger, delay] spawn { " \n " _zuendi = _this select 0; " \n " _delay = _this select 1; " \n " _array = [_zuendi] call BIS_fnc_allSynchronizedObjects; " \n " for [{_i = 0}, {_i < count _array}, {_i = _i+1}] do { " \n "  (_array select _i) setDamage 1; " \n "  sleep delay; " \n " }; " \n "};}";
+			sizeA=0;
+			sizeB=0;
+		};
+		id=0;
+		type="EmptyDetector";
+	};
+	class Item1
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,-43.800781};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=1;
+		type="Claymore_F";
+	};
+	class Item2
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,-31.297363};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=2;
+		type="Claymore_F";
+	};
+	class Item3
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,-18.793945};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=3;
+		type="Claymore_F";
+	};
+	class Item4
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,-6.2905273};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=4;
+		type="Claymore_F";
+	};
+	class Item5
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,6.2128906};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=7;
+		type="Claymore_F";
+	};
+	class Item6
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,18.716309};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=8;
+		type="Claymore_F";
+	};
+	class Item7
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,31.219727};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=9;
+		type="Claymore_F";
+	};
+	class Item8
+	{
+		dataType="Object";
+		class PositionInfo
+		{
+			position[]={5.0737305,0,43.723145};
+			angles[]={0,4.712389,0};
+		};
+		side="Empty";
+		flags=4;
+		class Attributes
+		{
+		};
+		id=10;
+		type="Claymore_F";
+	};
+};
+class connections
+{
+	class LinkIDProvider
+	{
+		nextID=16;
+	};
+	class Links
+	{
+		items=16;
+		class Item0
+		{
+			linkID=0;
+			item0=1;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item1
+		{
+			linkID=1;
+			item0=2;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item2
+		{
+			linkID=2;
+			item0=3;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item3
+		{
+			linkID=3;
+			item0=4;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item4
+		{
+			linkID=4;
+			item0=7;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item5
+		{
+			linkID=5;
+			item0=8;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item6
+		{
+			linkID=6;
+			item0=9;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item7
+		{
+			linkID=7;
+			item0=10;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item8
+		{
+			linkID=8;
+			item0=1;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item9
+		{
+			linkID=9;
+			item0=2;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item10
+		{
+			linkID=10;
+			item0=3;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item11
+		{
+			linkID=11;
+			item0=4;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item12
+		{
+			linkID=12;
+			item0=7;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item13
+		{
+			linkID=13;
+			item0=8;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item14
+		{
+			linkID=14;
+			item0=9;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+		class Item15
+		{
+			linkID=15;
+			item0=10;
+			item1=0;
+			class CustomData
+			{
+				type="Sync";
+			};
+		};
+	};
+};
