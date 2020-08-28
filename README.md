@@ -39,4 +39,14 @@ CTRL SHIFT Z
 
 ### Compositions
 
+* Zeus SOS Basic Team
+* Zeus SOS Ambulance
+* Zeus SOS Multi Serial Detonator
+
 see [compositions](compositions/)
+
+### HowTos
+
+* [How to pack custom assets into a mod](HowTo%20-%20pack%20custom%20assets%20into%20a%20mod.md)
+
+see [doc](doc/)
