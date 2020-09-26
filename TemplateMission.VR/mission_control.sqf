@@ -45,6 +45,10 @@ MissionFail = {
 };
 
 Action1 = {
+    {
+        // code in remoteExec-block gets executed on every player's machine
+
+    } remoteExec ["bis_fnc_call", 0];
 };
 
 Action2 = {
